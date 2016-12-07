@@ -1,0 +1,1 @@
+<src/*.ml> or <src/*.mli> or "src/main.native": package(graphics), package(xml-light), package(str), package(netclient), package(lablgtk2), package(lablwebkit)

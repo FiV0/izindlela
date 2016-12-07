@@ -1,0 +1,33 @@
+Authors:
+	Lelio Brun, Finn Volkel
+
+Installation des librairies tierces avec opam :
+	opam install xml-light ocamlnet lablgtk
+
+Installation de lablwebkit :
+	* sudo apt-get install libwebkitgtk-dev
+	* opam install oasis     
+	* dans _lib/lablwebkit-1.2.8.2 (decompresser l'archive) :
+	   ocaml setup.ml -configure
+	   ocaml setup.ml -build
+	   oasis setup
+	   ocaml setup.ml -install
+
+Compilation :
+	make
+
+Utilisation : 
+	* ./main.native [OSM_filename]
+	* La GUI permet par [File] -> [Load OSM map] de charger une carte OSM 
+	  (si par exemple [OSM_filename] n'est pas spécifié).
+	  L'utilisation de l'interface est simple :
+	  	- 2 champs de texte permettent d'entrer des adresses 
+		  (validation de la requête par [RET] ou par les boutons associés).
+		  Les marqueurs correspondants sont affichés sur la carte.
+		- Des sélecteurs permettent de spécifier l'algo utilisé et ses options, 
+		  et un bouton permet de lancer la recherche d'itinéraire.
+		  Un message d'erreur s'affiche si l'un des points de départ ou d'arrivée
+		  est hors limites (du domaine OSM chargé).
+		  L'itinéraire s'affiche sur la carte et un sélecteur permet en plus d'afficher 
+		  l'espace visité par l'algo.
+	* l'option -s permet aussi de lancer une interface	
