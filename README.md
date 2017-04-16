@@ -1,6 +1,6 @@
 
 ## Izindlela
-Izindlela is an ocaml program which does shortest path routing for different
+Izindlela is an Ocaml program which does shortest path routing for different
 transportation modes of a map in osm format with visualization.
 
 ### Installation of third party libaries via opam:
@@ -49,4 +49,5 @@ the option -s starts a command line interface
 ![image failed to load](./latex/fig/euclidien_hl.png)
 
 #### Authors:
-Lélio Brun, Finn Volkel
+Lélio Brun, Finn Völkel
+
