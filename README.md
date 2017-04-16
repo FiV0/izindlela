@@ -26,6 +26,7 @@ in _lib/lablwebkit-1.2.8.2 (having decompressed the archive) :
 
 ### Usage :
 > ./main.native [OSM_filename]
+
 Via the GUI one can charge a file through [File] -> [Load OSM map]
 (in case OSM file was not specified).
 The interface has:
